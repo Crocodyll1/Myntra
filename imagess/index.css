@@ -133,6 +133,7 @@ header{
 .footer_column{
     display: flex;
     flex-direction: column;
+    
 }
 .footer_column h3{
     color: #282c3f; 
