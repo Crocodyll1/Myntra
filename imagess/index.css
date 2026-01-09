@@ -125,7 +125,7 @@ header{
 }
 .footer_container{
     padding: 30px 0 40px 0;
-    background: #FAFBFC;
+    background: #edeeee;
     display: flex ;
     justify-content: space-evenly;
 
@@ -152,5 +152,6 @@ header{
     color: #94969f;
     text-align: end;
     padding: 15px;
+    background: #edeeee;
 
 }
