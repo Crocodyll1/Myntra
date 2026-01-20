@@ -131,6 +131,13 @@ header{
 }
 
 /* main */
+.item-container{
+    width: 80%;
+    margin: 50px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
 .items-container{
     width: 80%;
