@@ -131,7 +131,7 @@ header{
 }
 
 /* main */
-.item-container{
+.category-items , .items-container{
     width: 80%;
     margin: 50px 10%;
     display: flex;
@@ -147,6 +147,7 @@ header{
 }
 .item-container{
     width: 250px;
+    margin-bottom: 10px
     ;
 
 }
@@ -221,5 +222,6 @@ header{
     border-radius: 10px;
     width: 100%;
     font-size: 18px;
+    cursor: pointer;
 
 }

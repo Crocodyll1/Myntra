@@ -1,8 +1,9 @@
 let itemsContainerElement = document.querySelector('.items-container');
 
+
 // mking components generic
 let innerHTML = '';
-items.forEach(item => {
+items.forEach(item => { 
   innerHTML += `
   <div class="item-container">
     <img class="item-image" src="${item.image}" alt="earring">
@@ -17,7 +18,7 @@ items.forEach(item => {
       <span class="discount">(${item.discount_percentage}% OFF)</span>
     </div>
 
-    <button class="btn-add-bag">Add to Bag</button>
+    <button class="btn-add-bag" onclick= "addToBag">Add to Bag</button>
   </div>`
 })
 
