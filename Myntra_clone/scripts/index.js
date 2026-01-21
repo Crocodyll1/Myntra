@@ -1,8 +1,23 @@
 let itemsContainerElement = document.querySelector('.items-container');
 
+let bagItems =[];
+function addToBag(itemID){
+  bagItems.push(itemID);
+  displayBagIcon();
 
-// mking components generic
-let innerHTML = '';
+
+}
+
+function displayBagIcon(){
+  let bagItemCountElement = document.querySelector('.add-item-count');
+  bagItemCountElement.innerHTML = bagItems.length;
+}
+
+
+
+displayItemsOnHomePage();
+function displayItemsOnHomePage() {
+  let innerHTML = '';
 items.forEach(item => { 
   innerHTML += `
   <div class="item-container">
@@ -18,8 +33,13 @@ items.forEach(item => {
       <span class="discount">(${item.discount_percentage}% OFF)</span>
     </div>
 
-    <button class="btn-add-bag" onclick= "addToBag">Add to Bag</button>
+    <button class="btn-add-bag" onclick= "addToBag(${item.id})">Add to Bag</button>
   </div>`
 })
 
 itemsContainerElement.innerHTML = innerHTML;
+
+
+}
+
+// mking components generic
