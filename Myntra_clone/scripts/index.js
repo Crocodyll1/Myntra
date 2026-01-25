@@ -1,4 +1,6 @@
 let itemsContainerElement = document.querySelector('.items-container');
+// displayBagIcon();
+displayItemsOnHomePage();
 
 let bagItems =[];
 function addToBag(itemID){
@@ -10,12 +12,15 @@ function addToBag(itemID){
 
 function displayBagIcon(){
   let bagItemCountElement = document.querySelector('.add-item-count');
-  bagItemCountElement.innerHTML = bagItems.length;
+  if(bagItems.length > 0){
+    
+    bagItemCountElement.innerHTML = bagItems.length;
+  } else {
+    bagItemCountElement.style.visibility = 'hidden';
+  }
 }
 
 
-
-displayItemsOnHomePage();
 function displayItemsOnHomePage() {
   let innerHTML = '';
 items.forEach(item => { 
