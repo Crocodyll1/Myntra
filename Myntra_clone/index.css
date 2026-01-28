@@ -240,10 +240,15 @@ left: 12px;
 top: -44px;
 font-weight: 700;
 cursor: pointer;
+visibility: hidden;
 
 }
+
+
+
 .action_container{
     text-decoration: none;
+     /* position: relative; */
 
 }
 a.action_container:link{
